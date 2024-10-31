@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 22 - Data Atual</title>
+    <script>
+        function mostrarData() {
+            let data = new Date();
+            let dia = data.getDate();
+            let mes = data.getMonth() + 1;
+            let ano = data.getFullYear();
+            alert("Data atual: " + dia + "/" + mes + "/" + ano);
+        }
+    </script>
+</head>
+<body onload="mostrarData()">
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 21 - Lâmpada</title>
+    <script>
+        function ligarLampada() {
+            document.getElementById("lampada").src = "../pic/lampadaon.png"; // Certifique-se de que o caminho está correto
+        }
+        function desligarLampada() {
+            document.getElementById("lampada").src = "../pic/lampadaoff.png"; // Certifique-se de que o caminho está correto
+        }
+    </script>
+</head>
+<body>
+    <img id="lampada" src="../pic/lampada.png" alt="Lâmpada" width="100" onmouseover="ligarLampada()" onmouseout="desligarLampada()">
+</body>
+</html>

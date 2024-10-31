@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Todas as Tags HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exemplo de Todas as Tags HTML</h1>
+    <nav>
+        <ul>
+            <li><a href="#section1">Seção 1</a></li>
+            <li><a href="#section2">Seção 2</a></li>
+            <li><a href="#section3">Seção 3</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="section1">
+        <h2>Seção 1: Introdução</h2>
+        <p>Este é um exemplo de um parágrafo. Aqui você pode incluir <strong>texto em negrito</strong> ou <em>texto em itálico</em>.</p>
+        <p>Links são importantes: <a href="https://www.example.com" target="_blank">Clique aqui para um exemplo de link</a>.</p>
+        
+        <h3>Lista de Itens</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        
+        <h3>Lista Ordenada</h3>
+        <ol>
+            <li>Primeiro</li>
+            <li>Segundo</li>
+            <li>Terceiro</li>
+        </ol>
+        
+        <h3>Tabela de Exemplo</h3>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="section2">
+        <h2>Seção 2: Formulário</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="section3">
+        <h2>Seção 3: Citação e Bloco de Código</h2>
+        <blockquote>
+            <p>Esta é uma citação famosa: "O único modo de fazer um excelente trabalho é amar o que você faz." - Steve Jobs</p>
+        </blockquote>
+        
+        <h3>Código de Exemplo</h3>
+        <pre>
+<code>
+function helloWorld() {
+    console.log("Hello, World!");
+}
+</code>
+        </pre>
+    </section>
+</main>
+
+<footer>
+    <p>Rodapé © 2024</p>
+</footer>
+
+</body>
+</html>

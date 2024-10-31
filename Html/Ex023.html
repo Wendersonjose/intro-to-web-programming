@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 23 - Formatação</title>
+    <script>
+        function paraMaiusculo() {
+            let campo = document.getElementById("string");
+            campo.value = campo.value.toUpperCase();
+        }
+        function formatarMoeda() {
+            let campo = document.getElementById("moeda");
+            let valor = parseFloat(campo.value.replace(",", ".")).toFixed(2);
+            campo.value = "R$ " + valor.replace(".", ",");
+        }
+    </script>
+</head>
+<body>
+    <label for="string">String:</label>
+    <input type="text" id="string" onblur="paraMaiusculo()"><br><br>
+
+    <label for="moeda">Moeda:</label>
+    <input type="text" id="moeda" onblur="formatarMoeda()"><br><br>
+</body>
+</html>

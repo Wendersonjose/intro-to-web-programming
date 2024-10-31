@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Currículo</title>
+    <script>
+        function validarFormulario() {
+            const nome = document.getElementById("nome").value;
+            const idade = document.getElementById("idade").value;
+            const telefone = document.getElementById("telefone").value;
+            const email = document.getElementById("email").value;
+            const qualificacao = document.getElementById("qualificacao").value;
+            const estadoCivil = document.getElementById("estadoCivil").value;
+
+            if (nome === "") {
+                alert("Por favor, preencha o campo Nome.");
+                return false;
+            }
+            if (idade === "") {
+                alert("Por favor, preencha o campo Idade.");
+                return false;
+            }
+            if (telefone === "") {
+                alert("Por favor, preencha o campo Telefone.");
+                return false;
+            }
+            if (email === "") {
+                alert("Por favor, preencha o campo Email.");
+                return false;
+            }
+            if (qualificacao === "") {
+                alert("Por favor, preencha o campo Qualificação Profissional.");
+                return false;
+            }
+            if (estadoCivil === "") {
+                alert("Por favor, selecione o Estado Civil.");
+                return false;
+            }
+
+            alert("Formulário enviado com sucesso!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Preencha seu currículo</h1>
+    <form onsubmit="return validarFormulario()">
+        <label>Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label>Idade:</label><br>
+        <input type="number" id="idade" name="idade"><br><br>
+
+        <label>Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Qualificação Profissional:</label><br>
+        <textarea id="qualificacao" name="qualificacao" rows="5" cols="30" placeholder="Descreva sua qualificação"></textarea><br><br>
+
+        <label>Estado Civil:</label><br>
+        <select id="estadoCivil" name="estadoCivil">
+            <option value="">Escolha uma Opção</option>
+            <option value="Solteiro">Solteiro(a)</option>
+            <option value="Casado">Casado(a)</option>
+            <option value="Divorciado">Divorciado(a)</option>
+            <option value="Viuvo">Viúvo(a)</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
